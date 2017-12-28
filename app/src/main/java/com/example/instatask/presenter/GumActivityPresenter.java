@@ -2,7 +2,7 @@ package com.example.instatask.presenter;
 
 import com.example.instatask.app.InstaApp;
 import com.example.instatask.model.dto.GumRoom;
-import com.example.instatask.view.DetailActivity;
+import com.example.instatask.view.impl.DetailActivity;
 import com.example.instatask.view.GumActivityView;
 
 import java.util.List;

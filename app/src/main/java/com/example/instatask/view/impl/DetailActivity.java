@@ -1,4 +1,4 @@
-package com.example.instatask.view;
+package com.example.instatask.view.impl;
 
 import android.os.Bundle;
 import android.support.design.widget.CoordinatorLayout;
@@ -15,6 +15,7 @@ import com.example.instatask.di.component.DetailComponent;
 import com.example.instatask.di.module.DetailActivityDynamicModule;
 import com.example.instatask.presenter.DetailActivityPresenter;
 import com.example.instatask.util.Constants;
+import com.example.instatask.view.DetailActivityView;
 import com.example.instatask.view.adapter.DaysAdapter;
 import com.example.instatask.view.vo.Day;
 
@@ -83,15 +84,18 @@ public class DetailActivity extends AppCompatActivity implements DetailActivityV
         recyclerViewDay.setLayoutManager(new LinearLayoutManager(getApplicationContext()));
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
     protected void onSaveInstanceState(Bundle outState) {
         super.onSaveInstanceState(outState);
         outState.putInt(BUNDLE_HALL_ID, hallId);
     }
 
+
     /**
-     * @param daysList List day objects.
+     * {@inheritDoc}.
      */
     @Override
     public void updateAdapter(List<Day> daysList) {
@@ -99,7 +103,7 @@ public class DetailActivity extends AppCompatActivity implements DetailActivityV
     }
 
     /**
-     * @param message text message.
+     * {@inheritDoc}.
      */
     @Override
     public void showMessage(String message) {

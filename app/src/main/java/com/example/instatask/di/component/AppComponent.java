@@ -15,6 +15,7 @@ import dagger.Component;
 @Singleton
 @Component(modules = {AppModule.class, ApiModule.class})
 public interface AppComponent {
+
     void inject(InstaApp app);
 
     void inject(BasePresenter basePresenter);

@@ -1,4 +1,4 @@
-package com.example.instatask.view;
+package com.example.instatask.view.impl;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -18,6 +18,7 @@ import com.example.instatask.di.module.GumDynamicModule;
 import com.example.instatask.model.dto.GumRoom;
 import com.example.instatask.presenter.GumActivityPresenter;
 import com.example.instatask.util.Constants;
+import com.example.instatask.view.GumActivityView;
 import com.example.instatask.view.adapter.GumRoomAdapter;
 
 import java.util.ArrayList;
@@ -32,6 +33,7 @@ import butterknife.ButterKnife;
  * @author Igor Hnes on 12/26/17.
  */
 public class GumActivity extends AppCompatActivity implements GumActivityView {
+
     @Inject
     GumActivityPresenter presenter;
     @BindView(R.id.root_gum)
@@ -98,9 +100,9 @@ public class GumActivity extends AppCompatActivity implements GumActivityView {
         adapter.setGumRooms(gumRooms);
     }
 
+
     /**
-     * @param hallId      item position.
-     * @param targetClass Class name.
+     * {@inheritDoc}.
      */
     @Override
     public void startActivity(int hallId, Class targetClass) {
@@ -110,7 +112,7 @@ public class GumActivity extends AppCompatActivity implements GumActivityView {
     }
 
     /**
-     * @param message text message.
+     * {@inheritDoc}.
      */
     @Override
     public void showMessage(String message) {

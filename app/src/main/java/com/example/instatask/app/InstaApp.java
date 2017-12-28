@@ -9,6 +9,7 @@ import com.example.instatask.di.component.DaggerAppComponent;
  * @author Igor Hnes on 12/26/17.
  */
 public class InstaApp extends Application {
+
     private static AppComponent component;
 
     public static AppComponent getComponent() {
