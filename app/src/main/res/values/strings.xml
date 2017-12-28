@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">InstaTask</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_detail">DetailActivity</string>
+
+    <!--GumActivity-->
+    <string name="prefix_open">Время открытия:</string>
+    <string name="prefix_close">Время закрытия:</string>
+
+    <!--DetailActivity-->
+    <string name="header_start">Начало</string>
+    <string name="header_end">Окончание</string>
+    <string name="header_duration">Длительность</string>
+    <string name="header_direction">Направление</string>
+</resources>

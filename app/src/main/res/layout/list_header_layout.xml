@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:paddingBottom="@dimen/spacing_small"
+    android:paddingTop="@dimen/spacing_small">
+
+    <TextView
+        android:id="@+id/tv_header_start"
+        android:layout_width="@dimen/column_start"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/spacing_medium"
+        android:layout_marginStart="@dimen/spacing_medium"
+        android:gravity="center"
+        android:text="@string/header_start"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead" />
+
+    <TextView
+        android:id="@+id/tv_header_end"
+        android:layout_width="@dimen/column_end"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/spacing_medium"
+        android:layout_marginStart="@dimen/spacing_medium"
+        android:gravity="center"
+        android:text="@string/header_end"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead" />
+
+    <TextView
+        android:id="@+id/tv_header_duration"
+        android:layout_width="@dimen/column_duration"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/spacing_medium"
+        android:layout_marginStart="@dimen/spacing_medium"
+        android:gravity="center"
+        android:text="@string/header_duration"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead" />
+
+    <TextView
+        android:id="@+id/tv_header_direction"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/spacing_medium"
+        android:layout_marginStart="@dimen/spacing_medium"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="@string/header_direction"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead" />
+
+</LinearLayout>
