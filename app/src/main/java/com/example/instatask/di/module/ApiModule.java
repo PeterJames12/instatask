@@ -14,6 +14,7 @@ import retrofit2.converter.jackson.JacksonConverterFactory;
  */
 @Module
 public class ApiModule {
+
     private static final String SERVER_URL = "https://instasport.co/club/bright/";
 
     /**

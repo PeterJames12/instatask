@@ -13,6 +13,7 @@ import dagger.Provides;
  */
 @Module
 public class DetailActivityDynamicModule {
+
     private DetailActivityView view;
 
     public DetailActivityDynamicModule(DetailActivityView view) {

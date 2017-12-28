@@ -1,4 +1,4 @@
-package com.example.instatask.view.impl;
+package com.example.instatask.view;
 
 import android.os.Bundle;
 import android.support.design.widget.CoordinatorLayout;
@@ -31,6 +31,7 @@ import butterknife.ButterKnife;
  * @author Igor Hnes on 12/26/17.
  */
 public class DetailActivity extends AppCompatActivity implements DetailActivityView {
+
     private static final String BUNDLE_HALL_ID = "bundle_hall_id";
     @Inject
     DetailActivityPresenter presenter;

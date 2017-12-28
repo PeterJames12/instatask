@@ -1,5 +1,7 @@
 package com.example.instatask.presenter;
 
+import android.support.annotation.NonNull;
+
 import com.example.instatask.app.InstaApp;
 import com.example.instatask.model.dto.Schedule;
 import com.example.instatask.view.DetailActivityView;
@@ -29,6 +31,7 @@ import retrofit2.Response;
  * @author Igor Hnes on 12/26/17.
  */
 public class DetailActivityPresenter extends BasePresenter {
+
     private static final int WEEK_DAYS_AFTER_MONDAY = 6;
     private final DateFormat formatter =
             new SimpleDateFormat("yyyy-MM-dd", Locale.getDefault());
@@ -53,7 +56,7 @@ public class DetailActivityPresenter extends BasePresenter {
         String dataEnd = getSundayDate();
         instaApi.getSchedule(dataStart, dataEnd, hallId).enqueue(new Callback<List<Schedule>>() {
             @Override
-            public void onResponse(Call<List<Schedule>> call, Response<List<Schedule>> response) {
+            public void onResponse(@NonNull Call<List<Schedule>> call, @NonNull Response<List<Schedule>> response) {
                 if (response.isSuccessful()) {
                     List<Schedule> scheduleList = response.body();
                     if (scheduleList != null && !scheduleList.isEmpty()) {
@@ -64,7 +67,7 @@ public class DetailActivityPresenter extends BasePresenter {
             }
 
             @Override
-            public void onFailure(Call<List<Schedule>> call, Throwable t) {
+            public void onFailure(@NonNull Call<List<Schedule>> call, @NonNull Throwable t) {
                 view.showMessage(t.getMessage());
             }
         });

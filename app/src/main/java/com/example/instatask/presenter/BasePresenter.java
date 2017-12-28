@@ -9,6 +9,7 @@ import javax.inject.Inject;
  * @author Igor Hnes on 12/26/17.
  */
 public abstract class BasePresenter {
+
     @Inject
     protected InstaApi instaApi;
 

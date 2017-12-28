@@ -1,4 +1,4 @@
-package com.example.instatask.view.impl;
+package com.example.instatask.view;
 
 import android.content.Intent;
 import android.os.Bundle;

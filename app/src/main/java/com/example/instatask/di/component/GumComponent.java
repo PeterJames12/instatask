@@ -1,7 +1,7 @@
 package com.example.instatask.di.component;
 
 import com.example.instatask.di.module.GumDynamicModule;
-import com.example.instatask.view.impl.GumActivity;
+import com.example.instatask.view.GumActivity;
 
 import javax.inject.Singleton;
 

@@ -21,6 +21,7 @@ import butterknife.ButterKnife;
  * @author Igor Hnes on 12/26/17.
  */
 public class DaysAdapter extends RecyclerView.Adapter<DaysAdapter.ViewHolder> {
+
     private List<Day> dayList;
 
     public DaysAdapter(List<Day> dayList) {

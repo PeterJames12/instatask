@@ -6,7 +6,7 @@
     android:id="@+id/root_gum"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.instatask.view.impl.GumActivity">
+    tools:context="com.example.instatask.view.GumActivity">
 
     <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"

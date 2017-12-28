@@ -24,6 +24,7 @@ import butterknife.ButterKnife;
  * @author Igor Hnes on 12/26/17.
  */
 public class GumRoomAdapter extends RecyclerView.Adapter<GumRoomAdapter.ViewHolder> {
+
     private List<GumRoom> gumRooms;
     private GumActivityPresenter presenter;
 

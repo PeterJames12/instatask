@@ -1,7 +1,7 @@
 package com.example.instatask.di.component;
 
 import com.example.instatask.di.module.DetailActivityDynamicModule;
-import com.example.instatask.view.impl.DetailActivity;
+import com.example.instatask.view.DetailActivity;
 
 import javax.inject.Singleton;
 

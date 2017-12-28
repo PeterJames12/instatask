@@ -4,6 +4,7 @@ package com.example.instatask.util;
  * @author Igor Hnes on 12/26/17.
  */
 public final class StringUtil {
+
     private StringUtil() {
     }
 

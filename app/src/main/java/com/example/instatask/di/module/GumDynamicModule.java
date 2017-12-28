@@ -13,6 +13,7 @@ import dagger.Provides;
  */
 @Module
 public class GumDynamicModule {
+
     private GumActivityView view;
 
     public GumDynamicModule(GumActivityView view) {
@@ -20,7 +21,6 @@ public class GumDynamicModule {
     }
 
     /**
-     *
      * @return GumActivityPresenter instance.
      */
     @Provides

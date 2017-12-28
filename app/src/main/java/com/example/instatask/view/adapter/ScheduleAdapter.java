@@ -23,7 +23,7 @@ import java.util.List;
  * @author Igor Hnes on 12/26/17.
  */
 public class ScheduleAdapter extends ArrayAdapter<Schedule> {
-    private static final String LOG_TAG = "my";
+
     public ScheduleAdapter(@NonNull Context context, List<Schedule> schedules) {
         super(context, R.layout.item_shedule, schedules);
     }

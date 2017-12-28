@@ -5,7 +5,7 @@
     android:id="@+id/root_detail"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.instatask.view.impl.DetailActivity">
+    tools:context="com.example.instatask.view.DetailActivity">
 
     <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"
